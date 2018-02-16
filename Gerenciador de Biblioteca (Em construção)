@@ -1,0 +1,13 @@
+//Conhecimentos necessários: procv/ index, macros, IF, datedif e Form controls
+
+//Fórmulas:
+
+=INDEX(banco2;K4;4)
+
+=IFERROR(DATEDIF(TODAY();C2;"MD");"")
+
+=IF(ISBLANK(INDEX(banco2;K4;4));"";INDEX(banco2;K4;4))
+
+=IF(AND(B2<>0;C2<>0;D2<>0);"Alugado";"Em estoque")
+
+//Pensando em como portar de forma visual
