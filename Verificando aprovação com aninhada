@@ -1,0 +1,15 @@
+//Formula para verificar a situação de aprovação de um aluno; 
+//Os resultados que a função vai retornar são os seguintes:
+//Aprovação direta: Quando a média dos bimestres for acima de 7,00 e sua frequência acima de 70%;
+//Reprovação Direta: Quando a frequência for abaixo de 70%;
+//Aprovação na Rec: Quando o aluno possui nota abaixo de 7,00 mas tem sua frequência acima de 70% e ao fazer a REC, consegue uma média
+//maior que 7,00;
+//Reprovação na Rec:Quando o aluno possui nota abaixo de 7,00 mas tem sua frequência acima de 70% e ao fazer a REC, consegue uma média
+//menor que 7,00;
+
+//Fórmula por extenso:
+
+=SE(E(K7<7;L7>70%);SE(MÉDIA(K7;M7)>7;"APROVADO NA REC";"REPROVAÇÃO NA REC");SE(E(K7>7;L7<70%);"REPROVADO POR FALTA";SE(E(K7>7;L7>70%);"APROVADO DIRETO";"REPROVADO DIRETO")))
+
+
+
